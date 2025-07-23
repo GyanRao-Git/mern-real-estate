@@ -34,7 +34,7 @@ export default function Profile() {
     e.preventDefault();
     try {
       dispatch(updateUserStart());
-      const res = await fetch(`/api/user/update/${currentUser._id}`, {
+      const res = await fetch(`/api/user/update/${currentUser._id}`, { //mongoDB wala id
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export default function Profile() {
   const handleDeleteUser = async () => {
     try {
       dispatch(deleteUserStart());
-      const res = await fetch(`/api/user/delete/${currentUser._id}`, {
+      const res = await fetch(`/api/user/delete/${currentUser._id}`, { 
         method: "DELETE",
       });
       const data = await res.json();
@@ -124,7 +124,7 @@ export default function Profile() {
     <div className="p-3 max-w-lg mx-auto">
       <h1 className="text-3xl font-semibold text-center my-7">Profile</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-         {/* <input
+         <input
           onChange={(e) => setFile(e.target.files[0])}
           type="file"
           ref={fileRef}
@@ -136,7 +136,7 @@ export default function Profile() {
           src={formData.avatar || currentUser.avatar}
           alt="profile"
           className="rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2"
-        /> */}
+        />
        
         <input
           type="text"
