@@ -60,26 +60,26 @@ A full-featured real estate marketplace built using the **MERN stack** (MongoDB,
 ## 📦 Folder Structure
 
 mern-real-estate/
+├── client/                 # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/     # Reusable UI components
+│       ├── pages/          # React pages (e.g. Home, Login)
+│       ├── features/       # Redux Toolkit slices
+│       ├── services/       # RTK Query endpoints
+│       └── utils/          # Utility functions
 │
-├── client/ # React frontend
-│ ├── public/
-│ └── src/
-│ ├── components/
-│ ├── pages/
-│ ├── features/ # Redux Toolkit slices
-│ ├── services/ # RTK Query endpoints
-│ └── utils/
+├── server/                 # Node.js + Express backend
+│   ├── controllers/        # Request handlers
+│   ├── models/             # Mongoose models
+│   ├── routes/             # API route definitions
+│   ├── middleware/         # JWT and error middleware
+│   └── config/             # DB and Firebase config
 │
-├── server/ # Node.js backend
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── config/
-│
-├── .env.example
-├── README.md
-└── LICENSE
+├── .env.example            # Example environment variables
+├── README.md               # Project documentation
+└── LICENSE                 # Project license file
+
 
 ---
 
