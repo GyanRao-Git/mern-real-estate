@@ -59,6 +59,7 @@ A full-featured real estate marketplace built using the **MERN stack** (MongoDB,
 
 ## 📦 Folder Structure
 
+<pre>
 mern-real-estate/
 ├── client/                 # React frontend
 │   ├── public/
@@ -79,7 +80,7 @@ mern-real-estate/
 ├── .env.example            # Example environment variables
 ├── README.md               # Project documentation
 └── LICENSE                 # Project license file
-
+</pre>
 
 ---
 
